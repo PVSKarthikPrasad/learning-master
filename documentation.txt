@@ -1,0 +1,29 @@
+hai. This file is being ignored by git bcz it is a .txt file, which i've asked git to ignore by adding it to .gitignore file. Cool stuff innit? 
+
+Git commands:
+    1. git init (to initialize. won't need to use after the first time)
+    2. git add 
+    3. git commit -m 'MSG HERE IN QUOTES'
+    4. git status 
+    5. git log
+        a. git log -p (for details)
+        b. git log -oneline
+        c. git log --stat
+        d. git log -NUMBER (add a number to see only that number of latest commits)
+    6. git restore FILE_NAME (restores the latest commit)
+    7. git branch (to list all the branches, and the current branch)
+        a. git branch BRANCH_NAME (to create a branch)
+        b. git branch -d BRANCH_NAME (to delete a branch)
+    8. git checkout BRANCH_NAME (to switch to a branch)
+        a. git checkout -b BRANCH_NAME (create a new branch and move to it immediately)
+    9. git merge BRANCH_NAME 
+        a. git merge --abort (to abort the merge)
+    10. git tag -a TAG_NAME BRANCH_ID -m MSG_OR_NOTE
+        a. git tag -d TAG_NAME
+    11. git remote add origin GITHUB_LINK (to set the origin of the respository, or in simple words, to connect local respository with GitHub)
+    12. git push -u origin master (to push to the GitHub account)
+    13. git config --list (lists the details of the local git account)
+        a. git config --global user.name "USER_NAME"
+        b. git config --global user.email "EMAIIL_ID"
+    
+
