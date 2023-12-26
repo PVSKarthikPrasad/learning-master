@@ -14,6 +14,7 @@ Git commands:
     7. git branch (to list all the branches, and the current branch)
         a. git branch BRANCH_NAME (to create a branch)
         b. git branch -d BRANCH_NAME (to delete a branch)
+        c. git branch --unset-upstream (to remove upstream information for the branch)
     8. git checkout BRANCH_NAME (to switch to a branch)
         a. git checkout -b BRANCH_NAME (create a new branch and move to it immediately)
     9. git merge BRANCH_NAME 
