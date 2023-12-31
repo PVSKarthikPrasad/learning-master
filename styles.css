@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+
+
+:root {
+    --black : #1B191C;
+    --white : #fae9d9;
+    --dark-orange : #EB5E38;
+    --light-orange : #F78E22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'VT323', monospace;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-page {
+    height: 100vh;
+    display: flex;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    gap: 1%;
+    /* background-color: purple; */
+}
+
+.intro-name {
+    font-size: 4rem;
+    color: var(--dark-orange);
+    color: var(--light-orange);
+    /* line-height: 75%; */
+    display: flex;
+    gap: 25px;
+    /* background-color: orange; */
+}
+
+.name {
+    color: var(--dark-orange);
+}
+
+.intro-page-description {
+    /* background-color: red; */
+    font-size: 2rem;
+    color: var(--white);
+    position: relative;
+    /* bottom: 5rem; */
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+    width: 50%;
+}
+
+.project {
+    position: relative;
+}
+
+.project-img img {
+    height: 15rem;
+}
+
+.project-img:hover {
+    cursor: pointer;
+    scale : 1.05;
+
+    animation: breathing 4s linear infinite;
+    animation-delay: 3s;
+    transition: 0.3s;
+}
+
+@keyframes breathing {
+    
+    0% {scale: 1.05;}
+    25% {scale: 1.1025;}
+    50% {scale: 1.05;}
+    75% {scale: 1;}
+    100% {scale: 1.05;}
+}
+
+.project-img {
+    font-size: 6rem;
+    color: white;
+}
+
+.project-img::before {
+    content: '01';
+    position: absolute;
+    left: -2.85rem;
+    top: -4.75rem;
+}
