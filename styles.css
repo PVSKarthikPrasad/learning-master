@@ -70,6 +70,7 @@
 
 .projects-list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: orange; */
@@ -107,9 +108,13 @@
     color: white;
 }
 
-.project-img::before {
+.project1::before {
     content: '01';
     position: absolute;
     left: -2.85rem;
     top: -4.75rem;
+}
+
+.project2 {
+    font-size: 1rem;
 }
